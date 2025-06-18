@@ -12,13 +12,9 @@ const Header = (props) => {
         className={`header-header ${props.rootClassName} `}
       >
         <div className="header-container1">
-          <Link href="/home">
-            <a className="header-link1">
-              <h1 className="header-heading1 TextSM">{props.heading1}</h1>
-            </a>
-          </Link>
+          <h1 className="header-heading1 TextSM">{props.heading1}</h1>
           <Link href="/profile">
-            <a className="header-link2">
+            <a className="header-link1">
               <div className="header-container2">
                 <svg viewBox="0 0 1024 1024" className="header-icon10">
                   <path d="M576 706.612v-52.78c70.498-39.728 128-138.772 128-237.832 0-159.058 0-288-192-288s-192 128.942-192 288c0 99.060 57.502 198.104 128 237.832v52.78c-217.102 17.748-384 124.42-384 253.388h896c0-128.968-166.898-235.64-384-253.388z"></path>
@@ -28,7 +24,7 @@ const Header = (props) => {
             </a>
           </Link>
           <Link href="/blog-post">
-            <a className="header-link3">
+            <a className="header-link2">
               <div className="header-container3">
                 <svg viewBox="0 0 1024 1024" className="header-icon12">
                   <path d="M917.806 229.076c-22.212-30.292-53.174-65.7-87.178-99.704s-69.412-64.964-99.704-87.178c-51.574-37.82-76.592-42.194-90.924-42.194h-496c-44.112 0-80 35.888-80 80v864c0 44.112 35.888 80 80 80h736c44.112 0 80-35.888 80-80v-624c0-14.332-4.372-39.35-42.194-90.924zM785.374 174.626c30.7 30.7 54.8 58.398 72.58 81.374h-153.954v-153.946c22.984 17.78 50.678 41.878 81.374 72.572zM896 944c0 8.672-7.328 16-16 16h-736c-8.672 0-16-7.328-16-16v-864c0-8.672 7.328-16 16-16 0 0 495.956-0.002 496 0v224c0 17.672 14.326 32 32 32h224v624z"></path>
@@ -59,11 +55,7 @@ const Header = (props) => {
         </div>
         <div data-role="MobileMenu" className="header-mobile-menu">
           <div className="header-top">
-            <Link href="/home">
-              <a className="header-link4">
-                <h1 className="header-heading2 TextSM">{props.heading11}</h1>
-              </a>
-            </Link>
+            <h1 className="header-heading2 TextSM">{props.heading11}</h1>
             <div data-role="CloseMobileMenu" className="header-close-menu">
               <svg viewBox="0 0 1024 1024" className="header-icon25">
                 <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
@@ -72,7 +64,7 @@ const Header = (props) => {
           </div>
           <div className="header-mid">
             <Link href="/profile">
-              <a className="header-link5">
+              <a className="header-link3">
                 <div className="header-container5">
                   <svg viewBox="0 0 1024 1024" className="header-icon27">
                     <path d="M576 706.612v-52.78c70.498-39.728 128-138.772 128-237.832 0-159.058 0-288-192-288s-192 128.942-192 288c0 99.060 57.502 198.104 128 237.832v52.78c-217.102 17.748-384 124.42-384 253.388h896c0-128.968-166.898-235.64-384-253.388z"></path>
@@ -82,7 +74,7 @@ const Header = (props) => {
               </a>
             </Link>
             <Link href="/blog-post">
-              <a className="header-link6">
+              <a className="header-link4">
                 <div className="header-container6">
                   <svg viewBox="0 0 1024 1024" className="header-icon29">
                     <path d="M917.806 229.076c-22.212-30.292-53.174-65.7-87.178-99.704s-69.412-64.964-99.704-87.178c-51.574-37.82-76.592-42.194-90.924-42.194h-496c-44.112 0-80 35.888-80 80v864c0 44.112 35.888 80 80 80h736c44.112 0 80-35.888 80-80v-624c0-14.332-4.372-39.35-42.194-90.924zM785.374 174.626c30.7 30.7 54.8 58.398 72.58 81.374h-153.954v-153.946c22.984 17.78 50.678 41.878 81.374 72.572zM896 944c0 8.672-7.328 16-16 16h-736c-8.672 0-16-7.328-16-16v-864c0-8.672 7.328-16 16-16 0 0 495.956-0.002 496 0v224c0 17.672 14.326 32 32 32h224v624z"></path>
@@ -129,16 +121,13 @@ const Header = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .header-link1 {
-            display: contents;
-          }
           .header-heading1 {
             color: var(--dl-color-gray-white);
             font-weight: 700;
             margin-right: var(--dl-layout-space-unit);
             text-decoration: none;
           }
-          .header-link2 {
+          .header-link1 {
             display: contents;
           }
           .header-container2 {
@@ -156,7 +145,7 @@ const Header = (props) => {
             color: var(--dl-color-gray-white);
             margin-left: var(--dl-layout-space-halfunit);
           }
-          .header-link3 {
+          .header-link2 {
             display: contents;
           }
           .header-container3 {
@@ -239,9 +228,6 @@ const Header = (props) => {
             flex-direction: row;
             justify-content: space-between;
           }
-          .header-link4 {
-            display: contents;
-          }
           .header-heading2 {
             color: var(--dl-color-secondary-400);
             font-weight: 700;
@@ -264,7 +250,7 @@ const Header = (props) => {
             flex-direction: column;
             justify-content: space-between;
           }
-          .header-link5 {
+          .header-link3 {
             display: contents;
           }
           .header-container5 {
@@ -282,7 +268,7 @@ const Header = (props) => {
             color: var(--dl-color-secondary-400);
             margin-left: var(--dl-layout-space-halfunit);
           }
-          .header-link6 {
+          .header-link4 {
             display: contents;
           }
           .header-container6 {
