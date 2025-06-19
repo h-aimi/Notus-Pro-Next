@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import Head from 'next/head'
 
 import { useTranslations } from 'next-intl'
@@ -24,14 +25,18 @@ const StitchDesign = (props) => {
                       />
                     </div>
                     <div className="stitch-design-depth5-frame11">
-                      <span className="stitch-design-text10">
-                        Demo Music Site Aimi
-                      </span>
+                      <Link href="/">
+                        <a className="stitch-design-link1">
+                          Demo Music Site Aimi
+                        </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="stitch-design-depth4-frame11">
                     <div className="stitch-design-depth5-frame02">
-                      <span className="stitch-design-text11">Home</span>
+                      <Link href="/">
+                        <a className="stitch-design-link2">Home</a>
+                      </Link>
                     </div>
                     <div className="stitch-design-depth5-frame12">
                       <span className="stitch-design-text12">Search</span>
@@ -138,7 +143,9 @@ const StitchDesign = (props) => {
                   <div className="stitch-design-depth4-frame04">
                     <div className="stitch-design-depth5-frame07">
                       <div className="stitch-design-depth6-frame05">
-                        <span className="stitch-design-text16">About</span>
+                        <Link href="/profile">
+                          <a className="stitch-design-link3">About</a>
+                        </Link>
                       </div>
                       <div className="stitch-design-depth6-frame14">
                         <span className="stitch-design-text17">Contact</span>
@@ -226,7 +233,7 @@ const StitchDesign = (props) => {
             align-items: flex-start;
             flex-direction: column;
           }
-          .stitch-design-text10 {
+          .stitch-design-link1 {
             color: rgb(255, 255, 255);
             height: auto;
             font-size: 18px;
@@ -249,7 +256,7 @@ const StitchDesign = (props) => {
             align-items: flex-start;
             flex-direction: column;
           }
-          .stitch-design-text11 {
+          .stitch-design-link2 {
             color: rgba(255, 255, 255, 1);
             height: auto;
             font-size: 14px;
@@ -605,9 +612,9 @@ const StitchDesign = (props) => {
             gap: 24px;
             display: flex;
             padding: 40px 20px;
-            flex-grow: 1;
-            align-self: stretch;
+            align-self: center;
             align-items: flex-start;
+            padding-left: 40px 20px;
             flex-direction: column;
           }
           .stitch-design-depth5-frame07 {
@@ -626,7 +633,7 @@ const StitchDesign = (props) => {
             flex-shrink: 0;
             flex-direction: column;
           }
-          .stitch-design-text16 {
+          .stitch-design-link3 {
             color: rgba(163, 170, 178, 1);
             height: auto;
             font-size: 16px;

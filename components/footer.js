@@ -66,9 +66,7 @@ const Footer = (props) => {
           </div>
         </div>
         <div className="footer-container21"></div>
-        <span className="footer-text23 TextSM">
-          Copyright © 2021 Notus PRO React by Creative Tim.
-        </span>
+        <span className="footer-text23 TextSM">Copyright © 2025 h_aimi</span>
       </div>
       <style jsx>
         {`
