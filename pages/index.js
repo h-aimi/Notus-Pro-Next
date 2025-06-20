@@ -41,9 +41,8 @@ const StitchDesign = (props) => {
                     <div className="stitch-design-depth5-frame12">
                       <span className="stitch-design-text12">Search</span>
                     </div>
-                    <div className="stitch-design-depth5-frame2">
-                      <span className="stitch-design-text13">Your Library</span>
-                    </div>
+                    <span className="stitch-design-text13">Your Library</span>
+                    <div className="stitch-design-depth5-frame2"></div>
                   </div>
                 </div>
                 <div className="stitch-design-depth3-frame1">
@@ -287,11 +286,6 @@ const StitchDesign = (props) => {
             font-stretch: normal;
             text-decoration: none;
           }
-          .stitch-design-depth5-frame2 {
-            display: flex;
-            align-items: flex-start;
-            flex-direction: column;
-          }
           .stitch-design-text13 {
             color: rgba(255, 255, 255, 1);
             height: auto;
@@ -304,6 +298,12 @@ const StitchDesign = (props) => {
             line-height: 21px;
             font-stretch: normal;
             text-decoration: none;
+          }
+          .stitch-design-depth5-frame2 {
+            border: 2px dashed rgba(120, 120, 120, 0.4);
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
           }
           .stitch-design-depth3-frame1 {
             gap: 32px;
